@@ -3,6 +3,7 @@ import ProductCard from '../components/ProductCard';
 import Navbar from '../components/nav';
 import Sidebar from '../components/sidebar';
 
+
 const ProductPage = () => {
     const [products] = useState([
 
