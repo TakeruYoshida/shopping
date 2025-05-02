@@ -31,9 +31,10 @@ const ProductPage = () => {
         <div>
             <Navbar />
             <div style={{ display: 'flex', padding: '2rem', gap: '2rem' }}>
-                <Sidebar handleSelectedType={handleTypeSelectMenu}/>
+                <Sidebar handleSelectedType={handleTypeSelectMenu} />
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', padding: '2rem' }}>
                     {products
+                        .filter((product) => selectedType === "all" || product.type === selectedType)
                         .filter((product) => product.type === selectedType) // T-shirt のみ抽出
                         .map((product) => (
                             <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />

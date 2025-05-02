@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sidebar({handleSelectedType}) {
+function Sidebar({ handleSelectedType }) {
     return (
         <aside style={{ width: '220px', padding: '1rem', backgroundColor: '#f8f8f8', borderRight: '1px solid #ddd' }}>
             <h3 style={{ marginBottom: '1rem' }}>絞り込み</h3>
@@ -9,6 +9,7 @@ function Sidebar({handleSelectedType}) {
             <div style={{ marginBottom: '1.5rem' }}>
                 <h4>カテゴリ</h4>
                 <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+                    <li><a href="#" onClick={() => handleSelectedType("All")}>すべてのアイテム</a></li>
                     <li><a href="#" onClick={() => handleSelectedType("T-shirt")}>Tシャツ</a></li>
                     <li><a href="#" onClick={() => handleSelectedType("Denim")}>デニム</a></li>
                     <li><a href="#" onClick={() => handleSelectedType("Jacket")}>ジャケット</a></li>
