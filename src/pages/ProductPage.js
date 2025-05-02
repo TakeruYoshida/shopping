@@ -7,7 +7,7 @@ const ProductPage = () => {
     const [products] = useState([
 
         { id: 1, name: 'Tシャツ', price: 2980, type: 'T-shirt', image: '../images/T-shirts1.jpg' },
-        { id: 2, name: 'デニムパンツ', price: 5980, type: 'T-shirt', image: '/images/denim.jpg' },
+        { id: 2, name: 'HARLEY', price: 5980, type: 'T-shirt', image: '/images/denim.jpg' },
         { id: 3, name: 'キャップ', price: 1980, type: 'T-shirt', image: '/images/denim.jpg' },
         { id: 4, name: 'キャップ', price: 980, type: 'Denim', image: '/images/denim.jpg' },
         { id: 5, name: 'キャップ', price: 190, type: 'Jacket', image: '/images/denim.jpg' },
