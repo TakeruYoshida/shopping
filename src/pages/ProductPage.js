@@ -19,7 +19,7 @@ const ProductPage = () => {
     const handleAddToCart = (product) => {
         alert(`${product.name} をカートに追加しました`);
         selectedItem.push(product.name)
-        console.log(`カートに入っている商品: ${selectedItem}`)
+        console.log(`カートに入っているアイテム: ${selectedItem}`)
     };
 
     return (
