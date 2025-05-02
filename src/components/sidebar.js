@@ -9,11 +9,11 @@ function Sidebar({ handleSelectedType }) {
             <div style={{ marginBottom: '1.5rem' }}>
                 <h4>カテゴリ</h4>
                 <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-                    <li onClick={() => handleSelectedType("All")}>すべてのアイテム</li>
-                    <li onClick={() => handleSelectedType("T-shirt")}>Tシャツ</li>
-                    <li onClick={() => handleSelectedType("Denim")}>デニム</li>
-                    <li onClick={() => handleSelectedType("Jacket")}>ジャケット</li>
-                    <li onClick={() => handleSelectedType("Bag")}>バッグ</li>
+                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("All")}>すべてのアイテム</li>
+                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("T-shirt")}>Tシャツ</li>
+                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Denim")}>デニム</li>
+                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Jacket")}>ジャケット</li>
+                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Bag")}>バッグ</li>
                 </ul>
             </div>
 
