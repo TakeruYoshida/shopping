@@ -1,0 +1,13 @@
+.sidebar-category-list li {
+    padding: 0.3rem 0;
+    transition: background-color 0.2s, color 0.2s;
+    cursor: pointer;
+  }
+  
+  .sidebar-category-list li:hover {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 4px;
+    padding-left: 0.5rem;
+  }
+  

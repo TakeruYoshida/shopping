@@ -1,20 +1,23 @@
 import React from 'react'
+import './sidebar.css';
+
 
 function Sidebar({ handleSelectedType }) {
     return (
-        <aside style={{ width: '220px',minWidth: '220px',maxWidth: '220px', padding: '1rem', backgroundColor: '#f8f8f8', borderRight: '1px solid #ddd',boxSizing: 'border-box' }}>
+        <aside style={{ width: '220px', minWidth: '220px', maxWidth: '220px', padding: '1rem', backgroundColor: '#f8f8f8', borderRight: '1px solid #ddd', boxSizing: 'border-box' }}>
             <h3 style={{ marginBottom: '1rem' }}>絞り込み</h3>
 
             {/* カテゴリ */}
             <div style={{ marginBottom: '1.5rem' }}>
                 <h4>カテゴリ</h4>
-                <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("All")}>すべてのアイテム</li>
-                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("T-shirt")}>Tシャツ</li>
-                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Denim")}>デニム</li>
-                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Jacket")}>ジャケット</li>
-                    <li style={{ cursor: 'pointer' }} onClick={() => handleSelectedType("Bag")}>バッグ</li>
+                <ul className="sidebar-category-list" style={{ listStyle: 'none', paddingLeft: 0 }}>
+                    <li onClick={() => handleSelectedType("All")}>すべてのアイテム</li>
+                    <li onClick={() => handleSelectedType("T-shirt")}>Tシャツ</li>
+                    <li onClick={() => handleSelectedType("Denim")}>デニム</li>
+                    <li onClick={() => handleSelectedType("Jacket")}>ジャケット</li>
+                    <li onClick={() => handleSelectedType("Bag")}>バッグ</li>
                 </ul>
+
             </div>
 
             {/* ブランド */}

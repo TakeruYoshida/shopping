@@ -5,6 +5,12 @@
     width: 130px;
     text-align: center;
   }
+
+  .product-card:hover {
+    transform: translateY(-3px); /* 少し浮かせる */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 影をつける */
+    cursor: pointer;
+  }
   
   .product-card img {
     width: 100%;
@@ -24,6 +30,12 @@
     border: none;
     cursor: pointer;
   }
+
+.product-card button:hover {
+  background-color: #2980b9; 
+  transform: scale(1.05);     
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
   .product-grid > div {
     display: grid;
