@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sidebar({ handleSelectedType }) {
     return (
-        <aside style={{ width: '220px', padding: '1rem', backgroundColor: '#f8f8f8', borderRight: '1px solid #ddd' }}>
+        <aside style={{ width: '220px',minWidth: '220px',maxWidth: '220px', padding: '1rem', backgroundColor: '#f8f8f8', borderRight: '1px solid #ddd',boxSizing: 'border-box' }}>
             <h3 style={{ marginBottom: '1rem' }}>絞り込み</h3>
 
             {/* カテゴリ */}
