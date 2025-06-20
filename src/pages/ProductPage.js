@@ -48,12 +48,17 @@ const ProductPage = () => {
             <div style={{ display: 'flex', padding: '2rem', gap: '2rem' }}>
                 <Sidebar handleSelectedType={handleTypeSelectMenu} />
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', padding: '2rem' }}>
-                    {products
-                        .filter((product) => selectedType === "all" || product.type === selectedType)
-                        .filter((product) => product.type === selectedType) // T-shirt のみ抽出
-                        .map((product) => (
+                    {selectedType === 'All' ? (
+                        products.map((product) => (
                             <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
-                        ))}
+                        ))
+                    ) : (
+                        products
+                            .filter((product) => product.type === selectedType)
+                            .map((product) => (
+                                <ProductCard key={product.id} product={product} onAddToCart={handleAddToCart} />
+                            ))
+                    )}
                 </div>
             </div>
         </div>

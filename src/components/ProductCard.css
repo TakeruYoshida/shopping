@@ -8,7 +8,7 @@
   
   .product-card img {
     width: 100%;
-    height: auto;
+    height: 150px;
   }
   
   .product-card .price {
@@ -25,10 +25,15 @@
     cursor: pointer;
   }
 
-  .product-grid {
+  .product-grid > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    height: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
   
